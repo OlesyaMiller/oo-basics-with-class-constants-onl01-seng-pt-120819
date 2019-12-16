@@ -15,9 +15,17 @@ class Shoe
 
   def brand=(brand)
     @brand = brand 
+<<<<<<< HEAD
       if !BRANDS.include?(brand)
         BRANDS << brand 
       end
+=======
+    BRANDS.each do |item|
+      if !BRANDS.include?(item)
+        BRANDS << brand 
+      end
+    end
+>>>>>>> 09e79c2f5be9b04af6c7987bc0b34b5b28b83757
   end
   
 end
